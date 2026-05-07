@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvasquezExamenParcial.Views.Resumen"
+             Title="RESUMEN">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <!-- Usuario Conectado -->
+            <Label x:Name="connectedUserLabel"
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalOptions="End"/>
+
+            <!-- Título -->
+            <Label Text="RESUMEN"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <!-- Grid 9 filas x 2 columnas -->
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                  ColumnSpacing="10"
+                  RowSpacing="12">
+
+                <!-- Fila 0: Nombre -->
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Nombre:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="0" Grid.Column="1"
+                       x:Name="nombreLabel"/>
+
+                <!-- Fila 1: Apellido -->
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Apellido:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       x:Name="apellidoLabel"/>
+
+                <!-- Fila 2: Edad -->
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Edad:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="2" Grid.Column="1"
+                       x:Name="edadLabel"/>
+
+                <!-- Fila 3: Fecha -->
+                <Label Grid.Row="3" Grid.Column="0"
+                       Text="Fecha:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="1"
+                       x:Name="fechaLabel"/>
+
+                <!-- Fila 4: Ciudad -->
+                <Label Grid.Row="4" Grid.Column="0"
+                       Text="Ciudad:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="4" Grid.Column="1"
+                       x:Name="ciudadLabel"/>
+
+                <!-- Fila 5: País -->
+                <Label Grid.Row="5" Grid.Column="0"
+                       Text="País:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="5" Grid.Column="1"
+                       x:Name="paisLabel"/>
+
+                <!-- Fila 6: Monto Inicial -->
+                <Label Grid.Row="6" Grid.Column="0"
+                       Text="Monto Inicial:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="6" Grid.Column="1"
+                       x:Name="montoInicialLabel"/>
+
+                <!-- Fila 7: Pago Mensual -->
+                <Label Grid.Row="7" Grid.Column="0"
+                       Text="Pago Mensual:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="7" Grid.Column="1"
+                       x:Name="pagoMensualLabel"/>
+
+                <!-- Fila 8: Pago Total -->
+                <Label Grid.Row="8" Grid.Column="0"
+                       Text="Pago Total:"
+                       FontAttributes="Bold"/>
+                <Label Grid.Row="8" Grid.Column="1"
+                       x:Name="pagoTotalLabel"/>
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
